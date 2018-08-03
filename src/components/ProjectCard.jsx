@@ -37,8 +37,9 @@ const Title = styled.div`
   )};
   bottom: -20px;
   right: -20px;
+  border-radius: 20px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(60deg, #c1611f 0%, #ffa31b 100%);
+  background: linear-gradient(60deg, rgba(255, 27, 194, 0.81) 0%, #ff1b7b 100%);
   @media (max-width: 900px) {
     bottom: -10px;
     right: -10px;
