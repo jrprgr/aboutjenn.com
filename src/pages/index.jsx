@@ -14,7 +14,8 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import avatar from '../images/spain_arch.jpg';
+import avatar2 from '../images/group photo.jpg';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -100,7 +101,7 @@ const AboutHero = styled.div`
 `;
 
 const Avatar = styled.img`
-  ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full')};
+  ${tw('rounded-full w-1/2 xl:w-1/2 shadow-lg h-full')};
 `;
 
 const AboutSub = styled.span`
@@ -144,12 +145,12 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
 
       </Divider>
       <Content speed={0.4} offset={0}>
-        <Hero>
-          <BigTitle>
-            Hello, <br /> I'm Jenn. <br/><br/>Take a look around at my work. 
-          </BigTitle>
-          <Subtitle> </Subtitle>
-        </Hero>
+          <AboutHero>
+            <Avatar src={avatar} alt="John Doe" />
+            <AboutSub>Hi! I'm Jenn. Take a look around.
+            </AboutSub>
+          </AboutHero>
+
       </Content>
       <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={1} factor={2} />
       <DividerMiddle
@@ -160,33 +161,20 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title>Projects</Title>
-          <ProjectsWrapper>
-            <ProjectCard
-              fluid={p1.childImageSharp.fluid}
-              title="Eagle"
-              alt="Eagle - Animal Composing"
-              link="https://www.behance.net/gallery/38068151/Eagle"
-            />
-            <ProjectCard
-              fluid={p2.childImageSharp.fluid}
-              title="Tomb Raider"
-              alt="Tomb Raider - Wallpaper"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-            />
-            <ProjectCard
-              fluid={p3.childImageSharp.fluid}
-              title="Harry Potter"
-              alt="Harry Potter Fanart"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            />
-            <ProjectCard
-              fluid={p4.childImageSharp.fluid}
-              title="PROPRIUS"
-              alt="Instagram 366 Day Challenge"
-              link="https://www.behance.net/gallery/61747105/Best-of-PROPRIUS-2016"
-            />
-          </ProjectsWrapper>
+          <Title>About</Title>
+          <AboutHero>
+            <Avatar src={avatar2} alt="John Doe2" />
+            <AboutSub>
+              Welcome to my website! l I enjoy working on a variety of projects where I can contribute my creative and technical  
+            </AboutSub>
+          </AboutHero>
+          <AboutDesc>
+            ((( You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
+            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
+            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
+            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
+            all right?
+          </AboutDesc>
         </Inner>
       </Content>
       <Divider speed={0.1} offset={1} factor={2}>
@@ -212,23 +200,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
 
       </Divider>
       <Content speed={0.4} offset={3}>
-        <Inner>
-          <Title>About</Title>
-          <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
-            <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
-            </AboutSub>
-          </AboutHero>
-          <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
-          </AboutDesc>
-        </Inner>
+
       </Content>
       <Divider fill="#23262b" speed={0.2} offset={4}>
         <WaveWrapper>
@@ -287,7 +259,7 @@ Index.propTypes = {
 
 export const query = graphql`
   query IndexQuery {
-    p1: file(relativePath: { regex: "/project_1.jpg/" }) {
+    p1: file(relativePath: { regex: "/immre.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
