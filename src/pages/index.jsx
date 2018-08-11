@@ -227,12 +227,13 @@ const Index = () => (
               <li>My favorite experience was performing the duty of Competition Organizer. This is the most important week for the team. We transport the car and a team of 30 students from Florida to Michigan. I organized the logistics of scheduling, hotels, meals, and anything else that needed to be taken care of during this high stress time. </li>
 
               <li>Promotional Video for FSAE Car: <br/>
-
-              <iframe width="100%" src="https://www.youtube.com/embed/G4GiR_g9oYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
-              
+                          <div className="video-container">
+              <iframe width="100%" src="https://www.youtube.com/embed/G4GiR_g9oYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+              </div></li>
               <li>FSAE CFD Better Designs Faster with STAR CCM+ 1st Place:<br/>
-              <iframe width="100%"src="https://www.youtube.com/embed/2XfLFndmgv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
-               
+                          <div className="video-container">
+              <iframe width="100%"src="https://www.youtube.com/embed/2XfLFndmgv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+               </div></li>
               <li>2014-2015 FSAE Sponsorship Brochure Link: </li> 
               
                   </ul>
@@ -268,10 +269,15 @@ const Index = () => (
                <li>As an executive board member of the Filipino Student Association I was able to share my passion with a diverse group of students on campus. Being Vice President of Multimedia I was able to use all facets of my creative skills and created weekly multimedia content for meetings with audiences of about 100 as well as refined my project and event planning by facilitating meetings, workshops, and annual events.</li>
               
             <li>Student Assembly Video<br/>
-              <iframe width="100%"  src="https://www.youtube.com/embed/ByIDJYM8YBE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
-              
+            <div className="video-container">
+              <iframe width="420" height="315"  src="https://www.youtube.com/embed/ByIDJYM8YBE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </li>
             <li> Promotional Video for Winter Formal <br/> 
-              <iframe width="100%"  src="https://www.youtube.com/embed/-Ng0yTVYZkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
+            <div className="video-container">
+              <iframe width="100%"  src="https://www.youtube.com/embed/-Ng0yTVYZkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+             </div>
+             </li>
              </ul> 
           </AboutDesc>
         </Inner>
