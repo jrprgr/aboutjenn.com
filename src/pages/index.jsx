@@ -176,7 +176,7 @@ const Index = () => (
       />
 
 
-      <Content speed={0.4} offset={1} factor={2}>
+      <Content speed={0.4} offset={.75} factor={2}>
         <Inner>
           <Title>Immersed Games</Title>
           <AboutHero>
@@ -228,10 +228,10 @@ const Index = () => (
 
               <li>Promotional Video for FSAE Car: <br/>
 
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/G4GiR_g9oYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
+              <iframe width="100%" src="https://www.youtube.com/embed/G4GiR_g9oYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
               
               <li>FSAE CFD Better Designs Faster with STAR CCM+ 1st Place:<br/>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/2XfLFndmgv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
+              <iframe width="100%"src="https://www.youtube.com/embed/2XfLFndmgv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
                
               <li>2014-2015 FSAE Sponsorship Brochure Link: </li> 
               
@@ -268,10 +268,10 @@ const Index = () => (
                <li>As an executive board member of the Filipino Student Association I was able to share my passion with a diverse group of students on campus. Being Vice President of Multimedia I was able to use all facets of my creative skills and created weekly multimedia content for meetings with audiences of about 100 as well as refined my project and event planning by facilitating meetings, workshops, and annual events.</li>
               
             <li>Student Assembly Video<br/>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/ByIDJYM8YBE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
+              <iframe width="100%"  src="https://www.youtube.com/embed/ByIDJYM8YBE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
               
             <li> Promotional Video for Winter Formal <br/> 
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/-Ng0yTVYZkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
+              <iframe width="100%"  src="https://www.youtube.com/embed/-Ng0yTVYZkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
              </ul> 
           </AboutDesc>
         </Inner>
