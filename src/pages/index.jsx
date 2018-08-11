@@ -20,7 +20,7 @@ import avatar from '../images/spain_arch.jpg';
 import avatar2 from '../images/group photo.jpg';
 import avatar3 from '../images/immre1.jpg';
 import avatar4 from '../images/GMSTeam2015.jpg';
-import avatar5 from '../images/fsaeboard.jpg'
+import avatar5 from '../images/Viasphoto.jpg'
 import avatar6 from '../images/Gradphotos.jpg';
 
 const Divider = styled(ParallaxLayer)`
@@ -142,7 +142,7 @@ const Footer = styled.footer`
 const Index = () => (
   <React.Fragment>
     <SEO />
-    <Parallax pages={6.5}>
+    <Parallax pages={7}>
 
 
       <Divider speed={0.2} offset={0}>
@@ -161,7 +161,7 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
-            <AboutSub>Hi! I'm Jenn. I enjoy working in a fast-paced work enviornment where I contribute and grow my administative and creative skill set through managing events/logistics for teams and producing creative content. I thrive working on projects of all sizes but am most motivated when I can see my contributions and impact of my work. Please take a look around.
+            <AboutSub>Hi! I'm Jenn. I thrive working on projects of all sizes but am most motivated when I can see the impact of my work. Please take a look around.
             </AboutSub>
           </AboutHero>
       </Content>
@@ -186,7 +186,14 @@ const Index = () => (
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            During my internship at Immersed Games I had the opportunity to be apart of an amazing team. Through mentorship and collaborative projects I was able to see the behind the scenes of a fast paced startup. I also expanded my copywriting skills by creating PR kits with the head of marketing and assisted in the curation of engaging Facebook marketing materials. The materials were sent out to individuals in the educational video game space. Working in this creative environment allowed me to see the importance of innovation and efficiency in all aspects of a new company.
+            During my internship at Immersed Games I had the opportunity to be apart of an amazing team. Through mentorship and collaborative projects I was able to see the behind the scenes of a fast paced startup. 
+              
+              <ul>
+                  <li> Created PR kits with the head of marketing and assisted in the curation of engaging Facebook marketing materials. </li>
+              
+              <li>Edited photos and company headshots. </li>
+              </ul>
+
             
           </AboutDesc>
         </Inner>
@@ -218,13 +225,11 @@ const Index = () => (
           </AboutHero>
           <AboutDesc>
             <ul>
-                <li>Being apart of the Society of Automotive Engineers at the University of Florida was a pivotal part of my college experience. I was able to grow an array of skills within the organization from marketing, project planning, event organization, budgeting, non profit fundraising to learning all about the design, manufacturing, and testing process of a scaled formula vehicle.  </li>
+                <li> Assisted in all aspects of marketing, event organization, budgeting, and non profit fundraising. Revamped sponsorship brochure and raised enough funding for annual keynote events. </li>
+             
+              <li>Implemented a new purchasing system for team apparel that managed the entire acquisition process which resulted in 50% more apparel orders and faster turnaround time for products. </li>
               
-              <li>A fundamental idea I took away from working with a large team was the importance of logistics planning and team culture. Working with a group of students it was important to have clear and concise communication. We did this by utilizing the google suite and having a fully transparent documentation system. </li>
-              
-              <li>Efficience was at the forefront of our team values. I implemented a new purchasing system for team apparel that managed the entire acquisition process which resulted in 50% more apparel orders and faster turnaround time for products. </li>
-              
-              <li>My favorite experience was performing the duty of Competition Organizer. This is the most important week for the team. We transport the car and a team of 30 students from Florida to Michigan. I organized the logistics of scheduling, hotels, meals, and anything else that needed to be taken care of during this high stress time. </li>
+              <li>Organized the logistics and scheduling of hotels, meal, and transportation for a two week out of state compeition for 25 students. </li>
 
               <li>Promotional Video for FSAE Car: <br/>
                           <div className="video-container">
@@ -266,7 +271,9 @@ const Index = () => (
           </AboutHero>
           <AboutDesc>
            <ul>
-               <li>As an executive board member of the Filipino Student Association I was able to share my passion with a diverse group of students on campus. Being Vice President of Multimedia I was able to use all facets of my creative skills and created weekly multimedia content for meetings with audiences of about 100 as well as refined my project and event planning by facilitating meetings, workshops, and annual events.</li>
+               <li>Created weekly multimedia content for meetings with audiences of about 100. </li>
+               
+               <li>Facilitating meetings, workshops, and annual events for club.</li>
               
             <li>Student Assembly Video<br/>
             <div className="video-container">
@@ -275,7 +282,16 @@ const Index = () => (
             </li>
             <li> Promotional Video for Winter Formal <br/> 
             <div className="video-container">
-              <iframe width="100%"  src="https://www.youtube.com/embed/-Ng0yTVYZkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+              <iframe width="100%"  src="https://www.youtube.com/embed/-Ng0yTVYZkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br/><br/>
+        <br/><br/>
+        <br/><br/>
+        <br/>
+                
+                <br/>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
+        <br/>
              </div>
              </li>
              </ul> 
@@ -283,7 +299,9 @@ const Index = () => (
         </Inner>
       </Content>
 
-
+<br/>
+        <br/>
+        <br/>
 
       <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
       <Divider speed={0.1} offset={3.5}>
@@ -297,7 +315,11 @@ const Index = () => (
         </UpDownWide>
       </Divider>
 
-      <Content speed={0.4} offset={5} factor={2}>
+     <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Content speed={0.4} offset={5.5} factor={2}>
         <Inner>
           <Title>Freelance </Title>
           <AboutHero>
@@ -307,11 +329,12 @@ const Index = () => (
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            I have been practicing photography and videography for the past 4 years. I enjoy the creative and technical aspects of both crafts. During my time at UF I worked as a freelance photographer and videographer. My concentration was graduation photos, product photography, and event videography. 
+            <ul>
+            <li>Graduation Photos</li>
+            <li>Product Photography and Videography</li>
+            <li>Event Photography and Videography</li>
+</ul>
             
-              
-              
-
           </AboutDesc>
         </Inner>
       </Content>
