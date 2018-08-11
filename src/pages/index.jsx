@@ -2,21 +2,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
-import { graphql } from 'gatsby';
 import { Parallax, ParallaxLayer } from 'react-spring';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
 
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
-import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
+
+import '../styles/global';
+
+//Images
 import avatar from '../images/spain_arch.jpg';
 import avatar2 from '../images/group photo.jpg';
-import '../styles/global';
+
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -104,6 +106,10 @@ const Avatar = styled.img`
   ${tw('rounded-full w-1/2 xl:w-1/2 shadow-lg h-full')};
 `;
 
+const Picture = styled.img`
+  ${tw(' w-1/2 xl:w-1/2 shadow-lg h-full')};
+`;
+
 const AboutSub = styled.span`
   ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
 `;
@@ -128,10 +134,14 @@ const Footer = styled.footer`
   }
 `;
 
-const Index = ({ data: { p1, p2, p3, p4 } }) => (
+
+
+const Index = () => (
   <React.Fragment>
     <SEO />
-    <Parallax pages={5}>
+    <Parallax pages={5.5}>
+
+
       <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
@@ -142,16 +152,18 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
 
         </UpDownWide>
         <SVG icon="circle" className={hidden} width={24} fill={colors['grey-darker']} left="5%" top="70%" />
-
       </Divider>
+
+
       <Content speed={0.4} offset={0}>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>Hi! I'm Jenn. Take a look around.
             </AboutSub>
           </AboutHero>
-
       </Content>
+
+
       <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={1} factor={2} />
       <DividerMiddle
         bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
@@ -159,37 +171,32 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         offset={1}
         factor={2}
       />
-      <Content speed={0.4} offset={1.2} factor={2}>
+
+
+      <Content speed={0.4} offset={1} factor={2}>
         <Inner>
-          <Title>About</Title>
+          <Title>My Skillset:</Title>
           <AboutHero>
-            <Avatar src={avatar2} alt="John Doe2" />
+            <Picture src={avatar2} alt="John Doe2" />
             <AboutSub>
-              Welcome to my website! l I enjoy working on a variety of projects where I can contribute my creative and technical  
+              My main skillset managing events/logistics for teams and is producing creative content. 
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            ((( You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
+            ((( Youss know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
+            every day. My mother criesd the day I was born because she knew she’d never be prettier than me. You should
             make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
             kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
             all right?
           </AboutDesc>
         </Inner>
       </Content>
-      <Divider speed={0.1} offset={1} factor={2}>
-        <UpDown>
 
-        </UpDown>
-        <UpDownWide>
 
-        </UpDownWide>
 
-      </Divider>
       <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
       <Divider speed={0.1} offset={3}>
         <UpDown>
-
         </UpDown>
         <UpDownWide>
           <SVG icon="arrowUp" className={hidden} width={16} fill={colors.purple} left="5%" top="80%" />
@@ -197,11 +204,94 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
         </UpDownWide>
-
       </Divider>
-      <Content speed={0.4} offset={3}>
 
+
+      <Content speed={0.4} offset={2} factor={2}>
+        <Inner>
+          <Title>Gator Motorsports:</Title>
+          <AboutHero>
+            <Picture src={avatar2} alt="John Doe2" />
+            <AboutSub>
+              Welcome to my website! l I enjoy working on a variety of projects where I can contribute my creative and technical  
+            </AboutSub>
+          </AboutHero>
+          <AboutDesc>
+            ((( Youss know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
+            every day. My mother criesd the day I was born because she knew she’d never be prettier than me. You should
+            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
+            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
+            all right?
+          </AboutDesc>
+        </Inner>
       </Content>
+
+      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
+      <Divider speed={0.1} offset={3.5}>
+        <UpDown>
+        </UpDown>
+        <UpDownWide>
+          <SVG icon="arrowUp" className={hidden} width={16} fill={colors.purple} left="5%" top="80%" />
+          <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
+          <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+        </UpDownWide>
+      </Divider>
+
+
+      <Content speed={0.4} offset={3} factor={2}>
+        <Inner>
+          <Title>Filpino Student Assoication:</Title>
+          <AboutHero>
+            <Picture src={avatar2} alt="John Doe2" />
+            <AboutSub>
+              Welcome to my website! l I enjoy working on a variety of projects where I can contribute my creative and technical  
+            </AboutSub>
+          </AboutHero>
+          <AboutDesc>
+            ((( Youss know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
+            every day. My mother criesd the day I was born because she knew she’d never be prettier than me. You should
+            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
+            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
+            all right?
+          </AboutDesc>
+        </Inner>
+      </Content>
+
+
+
+      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
+      <Divider speed={0.1} offset={3.5}>
+        <UpDown>
+        </UpDown>
+        <UpDownWide>
+          <SVG icon="arrowUp" className={hidden} width={16} fill={colors.purple} left="5%" top="80%" />
+          <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
+          <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+        </UpDownWide>
+      </Divider>
+
+      <Content speed={0.4} offset={4} factor={2}>
+        <Inner>
+          <Title>Freelance </Title>
+          <AboutHero>
+            <Picture src={avatar2} alt="John Doe2" />
+            <AboutSub>
+              Welcome to my website! l I enjoy working on a variety of projects where I can contribute my creative and technical  
+            </AboutSub>
+          </AboutHero>
+          <AboutDesc>
+            ((( Youss know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
+            every day. My mother criesd the day I was born because she knew she’d never be prettier than me. You should
+            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
+            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
+            all right?
+          </AboutDesc>
+        </Inner>
+      </Content>
+
+
       <Divider fill="#23262b" speed={0.2} offset={4}>
         <WaveWrapper>
           <InnerWave>
@@ -218,20 +308,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           </InnerWave>
         </WaveWrapper>
       </Divider>
-      <Content speed={0.4} offset={4}>
-        <Inner>
-          <Title>Get in touch</Title>
-          <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
-          </ContactText>
-        </Inner>
-        <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
-        </Footer>
-      </Content>
+
       <Divider speed={0.1} offset={4}>
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
@@ -247,45 +324,12 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
       </Divider>
+
+
     </Parallax>
   </React.Fragment>
 );
 
 export default Index;
 
-Index.propTypes = {
-  data: PropTypes.object.isRequired,
-};
 
-export const query = graphql`
-  query IndexQuery {
-    p1: file(relativePath: { regex: "/immre.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p2: file(relativePath: { regex: "/project_2.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p3: file(relativePath: { regex: "/project_3.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p4: file(relativePath: { regex: "/project_4.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-  }
-`;
