@@ -22,7 +22,6 @@ import avatar3 from '../images/immre1.jpg';
 import avatar4 from '../images/GMSTeam2015.jpg';
 import avatar5 from '../images/fsaeboard.jpg'
 import avatar6 from '../images/Gradphotos.jpg';
-import avatar7 from '../images/2015 t-shirt MockUp.jpg';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -143,7 +142,7 @@ const Footer = styled.footer`
 const Index = () => (
   <React.Fragment>
     <SEO />
-    <Parallax pages={5.5}>
+    <Parallax pages={6.5}>
 
 
       <Divider speed={0.2} offset={0}>
@@ -227,13 +226,16 @@ const Index = () => (
               
               <li>My favorite experience was performing the duty of Competition Organizer. This is the most important week for the team. We transport the car and a team of 30 students from Florida to Michigan. I organized the logistics of scheduling, hotels, meals, and anything else that needed to be taken care of during this high stress time. </li>
 
-              <li>Promotional Video for FSAE Car: <iframe width="560" height="315" src="https://www.youtube.com/embed/G4GiR_g9oYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
+              <li>Promotional Video for FSAE Car: <br/>
+
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/G4GiR_g9oYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
               
-              <li>FSAE CFD Better Designs Faster with STAR CCM+ 1st Place: <iframe width="560" height="315" src="https://www.youtube.com/embed/2XfLFndmgv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
+              <li>FSAE CFD Better Designs Faster with STAR CCM+ 1st Place:<br/>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2XfLFndmgv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
                
               <li>2014-2015 FSAE Sponsorship Brochure Link: </li> 
               
-                  </u>
+                  </ul>
               
           </AboutDesc>
         </Inner>
@@ -252,7 +254,7 @@ const Index = () => (
       </Divider>
 
 
-      <Content speed={0.4} offset={3} factor={2}>
+      <Content speed={0.4} offset={4} factor={2}>
         <Inner>
           <Title>Filpino Student Assoication</Title>
           <AboutHero>
@@ -265,10 +267,10 @@ const Index = () => (
            <ul>
                <li>As an executive board member of the Filipino Student Association I was able to share my passion with a diverse group of students on campus. Being Vice President of Multimedia I was able to use all facets of my creative skills and created weekly multimedia content for meetings with audiences of about 100 as well as refined my project and event planning by facilitating meetings, workshops, and annual events.</li>
               
-            <li>Student Assembly Video
+            <li>Student Assembly Video<br/>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/ByIDJYM8YBE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
               
-            <li> Promotional Video for Winter Formal 
+            <li> Promotional Video for Winter Formal <br/> 
               <iframe width="560" height="315" src="https://www.youtube.com/embed/-Ng0yTVYZkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </li>
              </ul> 
           </AboutDesc>
@@ -289,7 +291,7 @@ const Index = () => (
         </UpDownWide>
       </Divider>
 
-      <Content speed={0.4} offset={4} factor={2}>
+      <Content speed={0.4} offset={5} factor={2}>
         <Inner>
           <Title>Freelance </Title>
           <AboutHero>
