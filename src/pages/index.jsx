@@ -18,7 +18,9 @@ import '../styles/global';
 //Images
 import avatar from '../images/spain_arch.jpg';
 import avatar2 from '../images/group photo.jpg';
-
+import avatar3 from '../images/immre1.jpg';
+import avatar4 from '../images/GMSTeam2015.jpg';
+import avatar5 from '../images/fsaeboard.jpg'
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -158,7 +160,7 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
-            <AboutSub>Hi! I'm Jenn. Take a look around.
+            <AboutSub>Hi! I'm Jenn. I enjoy working in a fast-paced work enviornment where I contribute and grow my administative and creative skill set through managing events/logistics for teams and producing creative content. I thrive working on projects of all sizes but am most motivated when I can see my contributions and impact of my work. Please take a look around.
             </AboutSub>
           </AboutHero>
       </Content>
@@ -175,19 +177,16 @@ const Index = () => (
 
       <Content speed={0.4} offset={1} factor={2}>
         <Inner>
-          <Title>My Skillset:</Title>
+          <Title>Immersed Games</Title>
           <AboutHero>
-            <Picture src={avatar2} alt="John Doe2" />
+            <Picture src={avatar3} alt="John Doe2" />
             <AboutSub>
-              My main skillset managing events/logistics for teams and is producing creative content. 
+              Marketing Intern 
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            ((( Youss know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother criesd the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+            During my internship at Immersed Games I had the opportunity to be apart of an amazing team. Through mentorship and collaborative projects I was able to see the behind the scenes of a fast paced startup. I also expanded my copywriting skills by creating PR kits with the head of marketing and assisted in the curation of engaging Facebook marketing materials. The materials were sent out to individuals in the educational video game space. Working in this creative environment allowed me to see the importance of innovation and efficiency in all aspects of a new company.
+            
           </AboutDesc>
         </Inner>
       </Content>
@@ -209,19 +208,22 @@ const Index = () => (
 
       <Content speed={0.4} offset={2} factor={2}>
         <Inner>
-          <Title>Gator Motorsports:</Title>
+          <Title>Gator Motorsports</Title>
           <AboutHero>
-            <Picture src={avatar2} alt="John Doe2" />
+            <Picture src={avatar4} alt="John Doe2" />
             <AboutSub>
-              Welcome to my website! l I enjoy working on a variety of projects where I can contribute my creative and technical  
+              Business Team Member  
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            ((( Youss know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother criesd the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+            Being apart of the Society of Automotive Engineers at the University of Florida was a pivotal part of my college experience. I was able to grow an array of skills within the organization from marketing, project planning, event organization, budgeting, non profit fundraising to learning all about the design, manufacturing, and testing process of a scaled formula vehicle.  
+              
+              A fundamental idea I took away from working with a large team was the importance of logistics planning and team culture. Working with a group of students it was important to have clear and concise communication. We did this by utilizing the google suite and having a fully transparent documentation system. 
+              
+              Efficience was at the forefront of our team values. I implemented a new purchasing system for team apparel that managed the entire acquisition process which resulted in 50% more apparel orders and faster turnaround time for products. 
+              
+              My favorite experience was performing the duty of Competition Organizer. This is the most important week for the team. We transport the car and a team of 30 students from Florida to Michigan. I organized the logistics of scheduling, hotels, meals, and anything else that needed to be taken care of during this high stress time. 
+
           </AboutDesc>
         </Inner>
       </Content>
@@ -241,19 +243,15 @@ const Index = () => (
 
       <Content speed={0.4} offset={3} factor={2}>
         <Inner>
-          <Title>Filpino Student Assoication:</Title>
+          <Title>Filpino Student Assoication</Title>
           <AboutHero>
-            <Picture src={avatar2} alt="John Doe2" />
+            <Picture src={avatar5} alt="John Doe2" />
             <AboutSub>
-              Welcome to my website! l I enjoy working on a variety of projects where I can contribute my creative and technical  
+              VP of Multimedia  
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            ((( Youss know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother criesd the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+           As an executive board member of the Filipino Student Association I was able to share my passion with a diverse group of students on campus. Being Vice President of Multimedia I was able to use all facets of my creative skills and created weekly multimedia content for meetings with audiences of about 100 as well as refined my project and event planning by facilitating meetings, workshops, and annual events.
           </AboutDesc>
         </Inner>
       </Content>
@@ -278,15 +276,12 @@ const Index = () => (
           <AboutHero>
             <Picture src={avatar2} alt="John Doe2" />
             <AboutSub>
-              Welcome to my website! l I enjoy working on a variety of projects where I can contribute my creative and technical  
+              Photography and Videography  
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            ((( Youss know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother criesd the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+            I have been practicing photography and videography for the past 4 years. I enjoy the creative and technical aspects of both crafts. I use the Adobe Creative Suite regularly. I am proficient in Premiere Pro, Lightroom, and Photoshop. I also have minimal experience with After Effect, InDesign, and Illustrator.
+
           </AboutDesc>
         </Inner>
       </Content>
