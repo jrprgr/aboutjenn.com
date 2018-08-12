@@ -161,7 +161,15 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
-            <AboutSub>Hi! I'm Jenn. I thrive working on projects of all sizes but am most motivated when I can see the impact of my work. Please take a look around.
+            <AboutSub><h1>Hi! I'm Jenn.</h1> 
+            <br/><br/>Take a look around.<br/> <br/> Here's an overview of my work:
+              <ul>
+                <li>Administrative support</li>
+                <li>Branded content  materials</li>
+                <li>Logistics and event planning</li>
+                <li>Photography</li>
+                <li>Videography</li>
+              </ul>
             </AboutSub>
           </AboutHero>
       </Content>
@@ -178,19 +186,20 @@ const Index = () => (
 
       <Content speed={0.4} offset={.75} factor={2}>
         <Inner>
-          <Title>Immersed Games</Title>
+          <Title>Immersed Games- Marketing Intern</Title>
           <AboutHero>
             <Picture src={avatar3} alt="John Doe2" />
-            <AboutSub>
-              Marketing Intern 
-            </AboutSub>
+
           </AboutHero>
           <AboutDesc>
-            During my internship at Immersed Games I had the opportunity to be apart of an amazing team. Through mentorship and collaborative projects I was able to see the behind the scenes of a fast paced startup. 
+            During my internship at Immersed Games, I had the opportunity to be apart of an amazing team. 
+            <br/>Through mentorship and collaborative projects I was able to work behind the scenes of a fast paced startup. 
               
               <ul>
-                  <li> Created PR kits with the head of marketing and assisted in the curation of engaging Facebook marketing materials. </li>
-              
+                  <li> Created PR kits in collaboration with the head of marketing </li> 
+               <br/>
+               <li>Assisted in the curation of engaging Facebook marketing materials. </li>
+              <br/>
               <li>Edited photos and company headshots. </li>
               </ul>
 
@@ -216,30 +225,29 @@ const Index = () => (
 
       <Content speed={0.4} offset={2} factor={2}>
         <Inner>
-          <Title>Gator Motorsports</Title>
+          <Title>Gator Motorsports- Business Team Member</Title>
           <AboutHero>
             <Picture src={avatar4} alt="John Doe2" />
-            <AboutSub>
-              Business Team Member  
-            </AboutSub>
           </AboutHero>
           <AboutDesc>
             <ul>
-                <li> Assisted in all aspects of marketing, event organization, budgeting, and non profit fundraising. Revamped sponsorship brochure and raised enough funding for annual keynote events. </li>
-             
-              <li>Implemented a new purchasing system for team apparel that managed the entire acquisition process which resulted in 50% more apparel orders and faster turnaround time for products. </li>
-              
-              <li>Organized the logistics and scheduling of hotels, meal, and transportation for a two week out of state compeition for 25 students. </li>
-
-              <li>Promotional Video for FSAE Car: <br/>
+                <li> Assisted in all aspects of marketing, event organization, budgeting, and non-profit fundraising. 
+             </li><br/><li>
+              Revamped sponsorship brochure and raised all major funding for annual keynote event. </li>
+             <br/>
+              <li>Implemented a new purchasing system for team apparel that managed the entire fufillment process, which resulted in 50% more apparel orders and faster turnaround time for products. </li>
+                           <br/>
+              <li>Organized the logistics and scheduling of hotels, meals, and transportation for a two week out-of-state engineering competittion for 25 students. </li>
+             <br/>
+              <li>Created promotional video for FSAE business event: <br/>
                           <div className="video-container">
               <iframe width="100%" src="https://www.youtube.com/embed/G4GiR_g9oYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-              </div></li>
-              <li>FSAE CFD Better Designs Faster with STAR CCM+ 1st Place:<br/>
+              </div></li>             <br/>
+              <li>FSAE CFD Better Designs Faster with STAR CCM+ Video Competition: 1st Place<br/>
                           <div className="video-container">
               <iframe width="100%"src="https://www.youtube.com/embed/2XfLFndmgv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-               </div></li>
-              <li>2014-2015 FSAE Sponsorship Brochure Link: </li> 
+               </div></li>             <br/>
+              <li>2014-2015 FSAE Sponsorship Brochure Link: <a style={{color:"white"}} href="/static/uf-sponsorship.pdf">Download</a> </li> 
               
                   </ul>
               
@@ -260,26 +268,24 @@ const Index = () => (
       </Divider>
 
 
-      <Content speed={0.4} offset={4} factor={2}>
+      <Content speed={0.4} offset={4.2} factor={2}>
         <Inner>
-          <Title>Filpino Student Assoication</Title>
+          <Title>Filpino Student Association- VP of Multimedia</Title>
           <AboutHero>
             <Picture src={avatar5} alt="John Doe2" />
-            <AboutSub>
-              VP of Multimedia  
-            </AboutSub>
           </AboutHero>
           <AboutDesc>
            <ul>
                <li>Created weekly multimedia content for meetings with audiences of about 100. </li>
-               
-               <li>Facilitating meetings, workshops, and annual events for club.</li>
-              
+                            <br/>
+               <li>Organized meetings, workshops, and annual events for club.</li>
+                           <br/>
             <li>Student Assembly Video<br/>
             <div className="video-container">
               <iframe width="420" height="315"  src="https://www.youtube.com/embed/ByIDJYM8YBE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
             </li>
+                         <br/>
             <li> Promotional Video for Winter Formal <br/> 
             <div className="video-container">
               <iframe width="100%"  src="https://www.youtube.com/embed/-Ng0yTVYZkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br/><br/>
@@ -321,18 +327,17 @@ const Index = () => (
         <br/>
         <Content speed={0.4} offset={5.5} factor={2}>
         <Inner>
-          <Title>Freelance </Title>
+          <Title>Freelance Photography and Videography  </Title>
           <AboutHero>
             <Picture src={avatar6} alt="John Doe2" />
             <AboutSub>
-              Photography and Videography  
+               
             </AboutSub>
           </AboutHero>
           <AboutDesc>
             <ul>
-            <li>Graduation Photos</li>
-            <li>Product Photography and Videography</li>
-            <li>Event Photography and Videography</li>
+            <li>Created graduation photos for over 30 clients </li>
+            <li>Created and delivered product photography and videography packages for business clients </li>
 </ul>
             
           </AboutDesc>
