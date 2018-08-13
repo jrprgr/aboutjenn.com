@@ -247,7 +247,7 @@ const Index = () => (
                           <div className="video-container">
               <iframe width="100%"src="https://www.youtube.com/embed/2XfLFndmgv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
                </div></li>             <br/>
-              <li>2014-2015 FSAE Sponsorship Brochure Link: <a style={{color:"white"}} href="/static/uf-sponsorship.pdf">Download</a> </li> 
+              <li>2014-2015 FSAE Sponsorship Brochure Link: <a style={{color:"white"}} href="/uf-sponsorship.pdf">Download</a> </li> 
               
                   </ul>
               
